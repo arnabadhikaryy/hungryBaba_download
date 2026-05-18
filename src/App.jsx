@@ -9,22 +9,22 @@ function App() {
         <div className="flex items-center gap-2">
           {/* Placeholder for your logo */}
           <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
-            H
+            NW
           </div>
-          <span className="text-xl font-bold text-gray-800">HungryBaba</span>
+          <span className="text-xl font-bold text-gray-800">Next-Wardrobe</span>
         </div>
       </header>
 
       {/* Main Content */}
       <main className="flex-grow flex flex-col items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
         <div className="max-w-4xl w-full bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
-          
+
           {/* Left Column - Image/Hero */}
           <div className="w-full md:w-1/2 bg-orange-50 p-8 flex items-center justify-center">
             {/* If hero.png fails to load, this acts as a nice fallback background */}
-            <img 
-              src={heroImg} 
-              alt="Hungry Baba App Preview" 
+            <img
+              src='https://res.cloudinary.com/dr6u53c39/image/upload/v1779084676/file_000000009cc47207ac5fe9f053f59bde_bfhh1z.png'
+              alt="Next-Wardrobe App Preview"
               className="max-w-full h-auto object-contain drop-shadow-2xl rounded-lg"
               onError={(e) => {
                 e.target.style.display = 'none';
@@ -43,22 +43,29 @@ function App() {
                 Google Play Protected
               </span>
             </div>
-            
+
             <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">
-              Download HungryBaba
+              Download Next-Wardrobe
             </h1>
             <p className="text-sm text-gray-500 mb-6 font-medium">
               Verified & Published by SaralTech
             </p>
-            
+
             <p className="text-gray-600 mb-8 leading-relaxed">
-              Get the latest version of our food delivery app directly to your device. Enjoy fast delivery, exclusive offers, and a seamless ordering experience.
+              We don’t just make clothes — we create confidence you can wear.
+
+              Every stitch, every fabric, and every design is made for people who refuse to blend in. Our brand is built on individuality, self-expression, and the belief that fashion is more than style — it’s identity. Whether you’re walking through city streets, chasing dreams, or making your own rules, what you wear should speak before you do.
+
+              We combine comfort with culture, trends with timelessness, and simplicity with bold attitude. This is more than a clothing brand. It’s a movement for those who wear ambition, creativity, and confidence every single day.
+
+              Dress different. Feel powerful. Become unforgettable.
+
             </p>
 
             {/* Download Button */}
-            <a 
-              href="/HungryBaba.apk" 
-              download="HungryBaba.apk" 
+            <a
+              href="next-wardrobe.apk"
+              download="next-wardrobe.apk"
               className="w-full flex items-center justify-center gap-3 bg-orange-600 hover:bg-orange-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-200 transform hover:scale-[1.02] shadow-lg hover:shadow-orange-500/30"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -75,9 +82,9 @@ function App() {
               </h3>
               <ol className="text-xs text-blue-800 list-decimal list-inside space-y-1">
                 <li>Tap the download button above.</li>
-                <li>Open the downloaded <strong>HungryBaba.apk</strong> file.</li>
+                <li>Open the downloaded <strong>Next-Wardrobe.apk</strong> file.</li>
                 <li>If prompted, tap <strong>Settings</strong> and enable <strong>"Allow from this source"</strong>.</li>
-                <li>Tap <strong>Install</strong> and enjoy your food!</li>
+                <li>Tap <strong>Install</strong> and enjoy!</li>
               </ol>
             </div>
 
@@ -88,10 +95,6 @@ function App() {
       {/* Footer */}
       <footer className="w-full bg-gray-900 text-gray-400 py-6 text-center text-sm">
         <p>© {new Date().getFullYear()} SaralTech. All rights reserved.</p>
-        <div className="mt-2 flex justify-center gap-4">
-          <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-          <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-        </div>
       </footer>
     </div>
   )
